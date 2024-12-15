@@ -22,12 +22,12 @@
         margin-top: 35px;
         margin-bottom: 40px;
         font-size: 1.3rem;
-
+        width: 50%;
 
     }
 
     #Sec {
-        background-color: rgb(124, 152, 181);
+        background-color: #99b9d9;
         color: white;
     }
 
@@ -40,6 +40,12 @@
     td {
         border: 0.5px solid black;
         padding: 10px;
+        height: 20px;
+        width: 20%;
+    }
+
+    td span {
+        position: absolute;
     }
 
     i {
@@ -72,6 +78,7 @@
 
     }
 
+
     #G {
         font-size: 2.5rem;
         font-family: "Bangers", system-ui;
@@ -98,7 +105,8 @@
         }
 
         table {
-            font-size: 0.7rem;
+            font-size: 1rem;
+            width: 95%;
         }
 
         nav div {
@@ -113,6 +121,35 @@
             font-size: 7.5px;
         }
 
+    }
+
+    #td {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: center; */
+        z-index: 1;
+        padding: 12px;
+        width: auto;
+    }
+
+    #td:hover>#Drop {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: justify;
+        width: 100%;
+        height: auto;
+        margin-top: 32px;
+        color: white;
+        background-color: #99b9d9;
+        border: 2px solid black;
+        padding: 5px;
+        z-index: 2;
+    }
+
+    #Drop {
+        display: none;
     }
 </style>
 
@@ -133,22 +170,54 @@
             <th>Notes</th>
         </tr>
         <tr>
-            <td>Verbal Aptitude</td>
+            <td id="td"><span>Verbal Aptitude</span>
+                <div id="Drop">
+                    Basic English grammar: tenses, articles,
+                    adjectives, prepositions, conjunctions, verb-
+                    noun agreement, and other parts of speech
+                    Basic vocabulary: words, idioms, and phrases
+                    in context, reading and comprehension,
+                    Narrative sequencing.
+                </div>
+            </td id="td">
             <td><a href="https://drive.google.com/drive/folders/1o_PHjnF6dkxvtYqz2R5wzkD_xFBg-9u-?usp=drive_link"
                     target="_blank"><i class="fa-regular fa-file"></i></a></td>
         </tr>
         <tr>
-            <td>Quantitative Aptitude</td>
+            <td id="td"><span>Quantitative Aptitude</span>
+                <div id="Drop">
+                    Data interpretation: data graphs (bar graphs,
+                    pie charts, and other graphs representing
+                    data), 2- and 3-dimensional plots, maps, and
+                    tables Numerical computation and estimation:
+                    ratios, percentages, powers, exponents and
+                    logarithms, permutations and combinations,
+                    and series Mensuration and geometry
+                    Elementary statistics and probability.
+                </div>
+            </td>
             <td><a href="https://drive.google.com/drive/folders/1oj0sc6erA1FoeyvWz4Eu0Qlz1cPlGYGg?usp=drive_link"
                     target="_blank"><i class="fa-regular fa-file"></i></a></td>
         </tr>
         <tr>
-            <td>Analytical Aptitude</td>
+            <td id="td"><span>Analytical Aptitude</span>
+                <div id="Drop">
+                    Logic: deduction and induction, Analogy,
+                    Numerical relations and reasoning
+                </div>
+            </td>
             <td><a href="https://drive.google.com/drive/folders/1okig0GGLc8Zfq1fBXfRGXcxPNbCpFLmD?usp=drive_link"
                     target="_blank"><i class="fa-regular fa-file"></i></a></td>
         </tr>
         <tr>
-            <td>Spatial Aptitude</td>
+            <td id="td"><span>Spatial Aptitude</span>
+                <div id="Drop">
+                    Transformation of shapes: translation,
+                    rotation, scaling, mirroring, assembling, and
+                    grouping paper folding, cutting, and patterns
+                    in 2 and 3 dimensions.
+                </div>
+            </td>
             <td><a href="https://drive.google.com/drive/folders/1owBlZeqD67cbkKwBxo1oXA6cWLVxC04W?usp=drive_link"
                     target="_blank"><i class="fa-regular fa-file"></i></a></td>
         </tr>
@@ -162,32 +231,67 @@
             <th>Notes</th>
         </tr>
         <tr>
-            <td>Linear Algebra</td>
+            <td id="td"><span>Linear Algebra</span>
+                <div id="Drop">
+                    Matrix algebra, systems of linear equations, eigen values and eigen vectors.
+                </div>
+            </td>
             <td><a href="https://drive.google.com/drive/folders/1bXeI8pD67ZGUr5Vpm7V2jxlCxQo9Nt9r?usp=drive_link"
                     target="_blank"><i class="fa-regular fa-file"></i></a></td>
         </tr>
         <tr>
-            <td>Calculus</td>
+            <td id="td"><span>Calculus</span>
+                <div id="Drop">
+                    Functions of single variable, limit, continuity and differentiability, mean value theorems,
+                    indeterminate forms; evaluation of definite and improper integrals; double and triple integrals;
+                    partial derivatives, total derivative, Taylor series (in one and two variables), maxima and minima,
+                    Fourier series; gradient, divergence and curl, vector identities, directional derivatives, line,
+                    surface
+                    and volume integrals, applications of Gauss, Stokes and Green’s theorems.
+                </div>
+            </td>
             <td><a href="https://drive.google.com/drive/folders/1h6YNuzPbjQ5yqPMwTXtRCv_1ZmzZX_ci?usp=drive_link"
                     target="_blank"><i class="fa-regular fa-file"></i></a></td>
         </tr>
         <tr>
-            <td>Differential Equations</td>
+            <td id="td"><span>Differential Equations</span>
+                <div id="Drop">
+                    First order equations (linear and nonlinear); higher order linear differential
+                    equations with constant coefficients; Euler-Cauchy equation; initial and boundary value problems;
+                    Laplace transforms; solutions of heat, wave and Laplace's equations.
+                </div>
+            </td>
             <td><a href="https://drive.google.com/drive/folders/1PCCSE5-k9d9-790oHw92C5uReuLKh2m9?usp=drive_link"
                     target="_blank"><i class="fa-regular fa-file"></i></a></td>
         </tr>
         <tr>
-            <td>Complex Variables</td>
+            <td id="td"><span>Complex Variables</span>
+                <div id="Drop">
+                    Analytic functions; Cauchy-Riemann equations; Cauchy’s integral theorem
+                    and integral formula; Taylor and Laurent series.
+                </div>
+            </td>
             <td><a href="https://drive.google.com/drive/folders/17Xm1-YOIpluFbZ4hZ9-JK1LwnR2BRaxi?usp=drive_link"
                     target="_blank"><i class="fa-regular fa-file"></i></a></td>
         </tr>
         <tr>
-            <td>Probability and Statistics</td>
+            <td id="td"><span>Probability and Statistics</span>
+                <div id="Drop">
+                    Definitions of probability, sampling theorems, conditional probability;
+                    mean, median, mode and standard deviation; random variables, binomial, Poisson and normal
+                    distributions.
+                </div>
+            </td>
             <td><a href="https://drive.google.com/drive/folders/1LONFPQBcPjnrOyCa_I0z47WXXIqG4aqy?usp=drive_link"
                     target="_blank"><i class="fa-regular fa-file"></i></a></td>
         </tr>
         <tr>
-            <td>Numerical Methods</td>
+            <td id="td"><span>Numerical Methods</span>
+                <div id="Drop">
+                    Numerical solutions of linear and non-linear algebraic equations; integration
+                    by trapezoidal and Simpson’s rules; single and multi-step methods for differential equations.
+                </div>
+            </td>
             <td><a href="https://drive.google.com/drive/folders/16RTi6DgPjn1nGiBk92Ad0Rd0-x6wq-WF?usp=drive_link"
                     target="_blank"><i class="fa-regular fa-file"></i></a></td>
         </tr>
@@ -201,27 +305,60 @@
             <th>Notes</th>
         </tr>
         <tr>
-            <td>Engineering Mechanics</td>
+            <td id="td"><span>Engineering Mechanics</span>
+                <div id="Drop">
+                    Free-body diagrams and equilibrium; friction and its applications
+                    including rolling friction, belt-pulley, brakes, clutches, screw jack, wedge, vehicles, etc.;
+                    trusses
+                    and frames; virtual work; kinematics and dynamics of rigid bodies in plane motion; impulse and
+                    momentum (linear and angular) and energy formulations; Lagrange’s equation.
+                </div>
+            </td>
             <td><a href="https://drive.google.com/drive/folders/1Fa2QPHc_WwCYuvM5rXoJvfkkaeA7Shn6?usp=drive_link"
                     target="_blank"><i class="fa-regular fa-file"></i></a></td>
         </tr>
         <tr>
-            <td>Mechanics of Materials</td>
+            <td id="td"><span>Mechanics of Materials</span>
+                <div id="Drop">
+                    Stress and strain, elastic constants, Poisson's ratio; Mohr’s circle for plane
+                    stress and plane strain; thin cylinders; shear force and bending moment diagrams; bending and
+                    shear stresses; concept of shear centre; deflection of beams; torsion of circular shafts; Euler’s
+                    theory of columns; energy methods; thermal stresses; strain gauges and rosettes; testing of
+                    materials with universal testing machine; testing of hardness and impact strength.
+                </div>
+            </td>
             <td><a href="https://drive.google.com/drive/folders/1DF14ly2i4T7BlAPdBV7ejQ6gmTls8rg_?usp=drive_link"
                     target="_blank"><i class="fa-regular fa-file"></i></a></td>
         </tr>
         <tr>
-            <td>Theory of Machines</td>
+            <td id="td"><span>Theory of Machines</span>
+                <div id="Drop">
+                    Displacement, velocity and acceleration analysis of plane mechanisms;
+                    dynamic analysis of linkages; cams; gears and gear trains; flywheels and governors; balancing of
+                    reciprocating and rotating masses; gyroscope.
+                </div>
+            </td>
             <td><a href="https://drive.google.com/drive/folders/1oaNp3RUDbGrMuaO7dxPF-r_A3Z52DJSx?usp=drive_link"
                     target="_blank"><i class="fa-regular fa-file"></i></a></td>
         </tr>
         <tr>
-            <td>Vibrations</td>
+            <td id="td"><span>Vibrations</span>
+                <div id="Drop">
+                    Free and forced vibration of single degree of freedom systems, effect of damping;
+                    vibration isolation; resonance; critical speeds of shafts.
+                </div>
+            </td>
             <td><a href="https://drive.google.com/drive/folders/13nhaQr8NuoQl6wK-9mxN0_9uwAwj21jK?usp=drive_link"
                     target="_blank"><i class="fa-regular fa-file"></i></a></td>
         </tr>
         <tr>
-            <td>Machine Design</td>
+            <td id="td"><span>Machine Design</span>
+                <div id="Drop">
+                    Design for static and dynamic loading; failure theories; fatigue strength and the
+                    S-N diagram; principles of the design of machine elements such as bolted, riveted and welded
+                    joints; shafts, gears, rolling and sliding contact bearings, brakes and clutches, springs.
+                </div>
+            </td>
             <td><a href="https://drive.google.com/drive/folders/1zPcU_jncpF9T0pomEGSmiJZMSTrPOIrq?usp=drive_link"
                     target="_blank"><i class="fa-regular fa-file"></i></a></td>
         </tr>
@@ -235,22 +372,56 @@
             <th>Notes</th>
         </tr>
         <tr>
-            <td>Fluid Mechanics</td>
+            <td id="td"><span>Fluid Mechanics</span>
+                <div id="Drop">
+                    Fluid properties; fluid statics, forces on submerged bodies, stability of floating
+                    bodies; control-volume analysis of mass, momentum and energy; fluid acceleration; differential
+                    equations of continuity and momentum; Bernoulli’s equation; dimensional analysis; viscous flow
+                    of incompressible fluids, boundary layer, elementary turbulent flow, flow through pipes, head
+                    losses in pipes, bends and fittings; basics of compressible fluid flow.
+                </div>
+            </td>
             <td><a href="https://drive.google.com/drive/folders/1djqxkZQgP63vrk_gnbuKKA8W5WwX0M6w?usp=drive_link"
                     target="_blank"><i class="fa-regular fa-file"></i></a></td>
         </tr>
         <tr>
-            <td>Heat Transfer</td>
+            <td id="td"><span>Heat Transfer</span>
+                <div id="Drop">
+                    Modes of heat transfer; one dimensional heat conduction, resistance concept and
+                    electrical analogy, heat transfer through fins; unsteady heat conduction, lumped parameter system,
+                    Heisler's charts; thermal boundary layer, dimensionless parameters in free and forced convective
+                    heat transfer, heat transfer correlations for flow over flat plates and through pipes, effect of
+                    turbulence; heat exchanger performance, LMTD and NTU methods; radiative heat transfer, Stefan-
+                    Boltzmann law, Wien's displacement law, black and grey surfaces, view factors, radiation network
+                    analysis
+                </div>
+            </td>
             <td><a href="https://drive.google.com/drive/folders/1nwpTo4iPPIG3C6BMemyytjmGffHNgL68?usp=drive_link"
                     target="_blank"><i class="fa-regular fa-file"></i></a></td>
         </tr>
         <tr>
-            <td>Thermodynamics</td>
+            <td id="td"><span>Thermodynamics</span>
+                <div id="Drop">
+                    Thermodynamic systems and processes; properties of pure substances, behavior
+                    of ideal and real gases; zeroth and first laws of thermodynamics, calculation of work and heat in
+                    various processes; second law of thermodynamics; thermodynamic property charts and tables,
+                    availability and irreversibility; thermodynamic relations.
+                </div>
+            </td>
             <td><a href="https://drive.google.com/drive/folders/1erE212TZ_nqzYiQQVqXuhZVCV3SNtf3s?usp=drive_link"
                     target="_blank"><i class="fa-regular fa-file"></i></a></td>
         </tr>
         <tr>
-            <td>Applications</td>
+            <td id="td"><span>Applications</span>
+                <div id="Drop">
+                    Power Engineering: Air and gas compressors; vapour and gas power cycles,
+                    concepts of regeneration and reheat. I.C. Engines: Air-standard Otto, Diesel and dual cycles.
+                    Refrigeration and air-conditioning: Vapour and gas refrigeration and heat pump cycles; properties
+                    of moist air, psychrometric chart, basic psychrometric processes. Turbomachinery: Impulse and
+                    reaction principles, velocity diagrams, Pelton-wheel, Francis and Kaplan turbines; steam and gas
+                    turbines.
+                </div>
+            </td>
             <td><a href="https://drive.google.com/drive/folders/19NW7OUGzh2wk0SwboK8TQ_SDrlhu4tzk?usp=drive_link"
                     target="_blank"><i class="fa-regular fa-file"></i></a></td>
         </tr>
@@ -264,42 +435,89 @@
             <th>Notes</th>
         </tr>
         <tr>
-            <td>Engineering Materials</td>
+            <td id="td"><span>Engineering Materials</span>
+                <div id="Drop">
+                    Structure and properties of engineering materials, phase diagrams, heat
+                    treatment, stress-strain diagrams for engineering materials.
+                </div>
+            </td>
             <td><a href="https://drive.google.com/drive/folders/1V_FOJ0KmByun-xWme-UtE4D0zORCFWNk?usp=drive_link"
                     target="_blank"><i class="fa-regular fa-file"></i></a></td>
         </tr>
         <tr>
-            <td>Casting, Forming and Joining Processes</td>
+            <td id="td"><span>Casting, Forming and Joining Processes</span>
+                <div id="Drop">
+                    Different types of castings, design of patterns, moulds
+                    and cores;solidification and cooling; riser and gating design. Plastic deformation and yield
+                    criteria;
+                    fundamentals of hot and cold working processes; load estimation for bulk (forging, rolling,
+                    extrusion, drawing) and sheet (shearing, deep drawing, bending) metal forming processes;
+                    principles of powder metallurgy. Principles of welding, brazing, soldering and adhesive bonding.
+                </div>
+            </td>
             <td><a href="https://drive.google.com/drive/folders/1vFbTEmI0eeKRl5C7uQIBa_9rAhAQ_Iy7?usp=drive_link"
                     target="_blank"><i class="fa-regular fa-file"></i></a></td>
         </tr>
         <tr>
-            <td>Machining and Machine Tool Operations</td>
+            <td id="td"><span>Machining and Machine Tool Operations</span>
+                <div id="Drop">
+                    Mechanics of machining; basic machine tools; single
+                    and multi-point cutting tools, tool geometry and materials, tool life and wear; economics of
+                    machining; principles of non-traditional machining processes; principles of work holding, jigs and
+                    fixtures; abrasive machining processes; NC/CNC machines and CNC programming.
+                </div>
+            </td>
             <td><a href="https://drive.google.com/drive/folders/1CsZkq_LGD4Y3t6BtbGtA3VFghbE0jCg2?usp=drive_link"
                     target="_blank"><i class="fa-regular fa-file"></i></a></td>
         </tr>
         <tr>
-            <td>Metrology and Inspection</td>
+            <td id="td"><span>Metrology and Inspection</span>
+                <div id="Drop">
+                    Limits, fits and tolerances; linear and angular measurements;
+                    comparators; interferometry; form and finish measurement; alignment and testing methods;
+                    tolerance analysis in manufacturing and assembly; concepts of coordinate-measuring machine
+                    (CMM).
+                </div>
+            </td>
             <td><a href="https://drive.google.com/drive/folders/1_tJWxD0sOlzB0Sf4z3eaKU0NGg81xSZX?usp=drive_link"
                     target="_blank"><i class="fa-regular fa-file"></i></a></td>
         </tr>
         <tr>
-            <td>Computer Integrated Manufacturing</td>
+            <td id="td"><span>Computer Integrated Manufacturing</span>
+                <div id="Drop">
+                    Basic concepts of CAD/CAM and their integration tools;
+                    additive manufacturing.
+                </div>
+            </td>
             <td><a href="https://drive.google.com/drive/folders/1E7z9iHaS-24CJIrSanLY5Oyr99UYId05?usp=drive_link"
                     target="_blank"><i class="fa-regular fa-file"></i></a></td>
         </tr>
         <tr>
-            <td>Production Planning and Control</td>
+            <td id="td"><span>Production Planning and Control</span>
+                <div id="Drop">
+                    Forecasting models, aggregate production planning, scheduling,
+                    materials requirement planning; lean manufacturing.
+                </div>
+            </td>
             <td><a href="https://drive.google.com/drive/folders/1PLs5NNuqtPI5fIbFhKgpQyDZvfLlnuNf?usp=drive_link"
                     target="_blank"><i class="fa-regular fa-file"></i></a></td>
         </tr>
         <tr>
-            <td>Inventory Control</td>
+            <td id="td"><span>Inventory Control</span>
+                <div id="Drop">
+                    Deterministic models; safety stock inventory control systems.
+                </div>
+            </td>
             <td><a href="https://drive.google.com/drive/folders/1z038w-F7xetqcq_ENQdmp-V8T9-LmK_z?usp=drive_link"
                     target="_blank"><i class="fa-regular fa-file"></i></a></td>
         </tr>
         <tr>
-            <td>Operations Research</td>
+            <td id="td"><span>Operations Research</span>
+                <div id="Drop">
+                    Linear programming, simplex method, transportation, assignment, network
+                    flow models, simple queuing models, PERT and CPM.
+                </div>
+            </td>
             <td><a href="https://drive.google.com/drive/folders/1sggWL4BEDAakqPAjkmH6gN1OVfKDdZjc?usp=drive_link"
                     target="_blank"><i class="fa-regular fa-file"></i></a></td>
         </tr>
